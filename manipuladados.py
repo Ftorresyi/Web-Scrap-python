@@ -24,3 +24,7 @@ tabela["Preço de Compra"] = tabela["Preço Original"] * tabela["Cotação"]
 tabela["Preço de Venda"] = tabela["Preço Original"] * tabela["Cotação"]
 
 print (tabela)
+
+#Passo 5 Exportar a base de preços atualizada
+tabela.to_excel("Resultado Produtos.xlsx", index=False)
+#index=False exclui a coluna index da planilha
